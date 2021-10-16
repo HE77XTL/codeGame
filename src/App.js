@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import {
+  HashRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 
-function App() {
+import Home from './view/home/Home'
+import PageNav from './view/pageNav/PageNav'
+import NotMatch from './view/404/NotMatch'
+import CodeGame from './view/codeGame/CodeGame'
+
+const App = function () {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Router>
+        <Switch>
+          <Route  path="/" exact={true}>
+            <Home />
+          </Route>
+          <Route  path="/pageNav">
+            <PageNav />
+          </Route>
+          <Route  path="/codeGame">
+            <CodeGame />
+          </Route>
+
+          <Route  path="/*">
+            <NotMatch />
+          </Route>
+        </Switch>
+      </Router>
   );
 }
 
-export default App;
+export default App
+
+

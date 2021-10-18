@@ -20,6 +20,9 @@ const PageNav = function () {
                         <li>
                             <Link to="/codeGame">codeGame</Link>
                         </li>
+                        <li>
+                            <Link to="/demoIndex">demoIndex</Link>
+                        </li>
                     </ul>
                 </nav>
             </div>

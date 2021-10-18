@@ -5,10 +5,13 @@ import {
   Route,
 } from "react-router-dom";
 
+import './App.css'
+
 import Home from './view/home/Home'
 import PageNav from './view/pageNav/PageNav'
 import NotMatch from './view/404/NotMatch'
 import CodeGame from './view/codeGame/CodeGame'
+import DemoIndex from './view/demo/DemoIndex'
 
 const App = function () {
   return (
@@ -22,6 +25,10 @@ const App = function () {
           </Route>
           <Route  path="/codeGame">
             <CodeGame />
+          </Route>
+
+          <Route  path="/demoIndex">
+            <DemoIndex />
           </Route>
 
           <Route  path="/*">

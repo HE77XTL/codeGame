@@ -4,6 +4,9 @@ import './demoIndex.css'
 import MultipleCircle from './MultipleCircle'
 import AntMotion from './AntMotion'
 import AntMotionNumberChange  from './AntMotionNumberChange'
+import TypistDemo  from './TypistDemo'
+import WaveSurferDemo  from './WaveSurferDemo'
+
 
 const DemoIndex = function () {
 
@@ -20,6 +23,8 @@ const DemoIndex = function () {
         <MultipleCircle />
         <AntMotion />
         <AntMotionNumberChange />
+        <WaveSurferDemo />
+        <TypistDemo />
     </div>)
 }
 

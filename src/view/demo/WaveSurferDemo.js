@@ -8,7 +8,8 @@ const WaveSurferDemo = function () {
     let wavesurfer  = useWaveSurfer.current;
 
     function initWave() {
-
+        // Prevent multiple instansiations on hot reloads
+        if (useWaveSurfer.current) return;
         wavesurfer = WaveSurfer.create({
             container: '#waveform',
             cursorColor: '#ffffff',

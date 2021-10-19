@@ -6,6 +6,7 @@ import AntMotion from './AntMotion'
 import AntMotionNumberChange  from './AntMotionNumberChange'
 import TypistDemo  from './TypistDemo'
 import WaveSurferDemo  from './WaveSurferDemo'
+import MojsDemo  from './MojsDemo'
 
 
 const DemoIndex = function () {
@@ -25,6 +26,7 @@ const DemoIndex = function () {
         <AntMotionNumberChange />
         <WaveSurferDemo />
         <TypistDemo />
+        <MojsDemo duration={1000}/>
     </div>)
 }
 

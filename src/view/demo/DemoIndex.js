@@ -8,6 +8,10 @@ import TypistDemo  from './TypistDemo'
 import WaveSurferDemo  from './WaveSurferDemo'
 import MojsDemo  from './MojsDemo'
 
+import axios from 'axios'
+
+import {Button} from "antd";
+
 
 const DemoIndex = function () {
 
@@ -16,6 +20,14 @@ const DemoIndex = function () {
 //--- useEffect ----------------------
 
 //--- function ----------------------
+    function axiosTest() {
+        axios({
+            method: 'get',
+            url: `http://10.19.100.12:8087/api/test`,
+        }).then(res => {
+            console.log(res)
+        })
+    }
 
 //--- operate ----------------------
 
@@ -27,6 +39,9 @@ const DemoIndex = function () {
         <WaveSurferDemo />
         <TypistDemo />
         <MojsDemo duration={1000}/>
+        <div>
+            <Button onClick={axiosTest}>axiosTest</Button>
+        </div>
     </div>)
 }
 

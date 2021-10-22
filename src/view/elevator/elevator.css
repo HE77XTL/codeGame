@@ -1,0 +1,211 @@
+.elevatorPage {
+    position: relative;
+    width: 300px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+.pillar {
+    width: 50px;
+    height: 340px;
+    border: 1px solid #cccccc;
+}
+
+.elevatorBox {
+    width: 100px;
+    height: 60px;
+    border: 1px solid #8c8c8c;
+    background: #cccccc;
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+    animation: elevatorBoxMove 15s linear infinite;
+}
+
+.person {
+    width: 20px;
+    height: 20px;
+    border: solid 1px;
+    background: #7ec1ff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: personOut 15s linear infinite;
+    opacity: 1;
+
+}
+
+.waitPerson {
+    width: 20px;
+    height: 20px;
+    border: solid 1px;
+    background: #81ff32;
+    position: absolute;
+    bottom: -30px;
+    left: 140px;
+    animation: waitPerson 15s linear infinite;
+}
+
+@keyframes waitPerson {
+    0% {
+        bottom: -30px;
+        opacity: 0;
+    }
+    2% {
+        bottom: -30px;
+        opacity: 1;
+    }
+    10% {
+        bottom: -30px;
+        opacity: 1;
+    }
+
+    18% {
+        bottom: 10px;
+        opacity: 1;
+    }
+    20% {
+        bottom: 10px;
+        opacity: 0;
+    }
+
+    100% {
+        bottom: -30px;
+        opacity: 0;
+    }
+}
+
+
+@keyframes personOut {
+    0% {
+        left: 0;
+        opacity: 0;
+    }
+    20% {
+        left: 0;
+        opacity: 0;
+    }
+
+
+
+    26% {
+        left: 0;
+        opacity: 0;
+    }
+    28% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    38% {
+        opacity: 1;
+    }
+    40% {
+        left: -50px;
+        opacity: 0;
+    }
+
+
+
+    46% {
+        left: 0;
+        opacity: 0
+    }
+    48% {
+        opacity: 0
+    }
+    50% {
+        opacity: 1;
+    }
+    58% {
+        opacity: 1
+    }
+    60% {
+        left: -50px;
+        opacity: 0;
+    }
+
+
+    66% {
+        left: 0;
+        opacity: 0;
+    }
+    68% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    78% {
+        opacity: 1;
+    }
+    80% {
+        left: -50px;
+        opacity: 0;
+    }
+
+
+    86% {
+        left: 0;
+        opacity: 0;
+    }
+    88% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+    }
+    98% {
+        opacity: 1;
+    }
+    100% {
+        left: -50px;
+        opacity: 0;
+    }
+}
+
+
+@keyframes elevatorBoxMove {
+    0% {
+        bottom: 0;
+    }
+    20% {
+        bottom: 0;
+    }
+
+
+
+    26% {
+        bottom:70px;
+    }
+    40% {
+        bottom:70px;
+    }
+
+
+
+    46% {
+        bottom: 140px;
+    }
+    60% {
+        bottom: 140px;
+    }
+
+
+    66% {
+        bottom: 210px;
+    }
+    80% {
+        bottom: 210px;
+    }
+
+
+    86% {
+        bottom: 280px;
+    }
+    100% {
+        bottom: 280px;
+    }
+}
+

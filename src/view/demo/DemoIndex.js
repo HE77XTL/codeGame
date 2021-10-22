@@ -23,7 +23,7 @@ const DemoIndex = function () {
     function axiosTest() {
         axios({
             method: 'get',
-            url: `http://10.19.100.12:8087/api/test`,
+            url: `/api/test`,
         }).then(res => {
             console.log(res)
         })

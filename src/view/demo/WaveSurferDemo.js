@@ -17,7 +17,7 @@ const WaveSurferDemo = function () {
             waveColor: '#000000',
             cursorWidth: 0,
         });
-        wavesurfer.load('/dear_john.m4a');
+        wavesurfer.load('/super_mario_bros1.mp3');
         wavesurfer.on('ready', function () {
             wavesurfer.play();
         });

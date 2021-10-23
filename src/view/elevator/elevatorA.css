@@ -1,35 +1,30 @@
-.personImg {
-    width: 20px;
-}
-
-.elevatorPage {
+.elevatorPageA {
     position: relative;
     width: 300px;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
 }
-.elevatorPage .pillar {
+.elevatorPageA .pillar {
     width: 30px;
     height: 340px;
     background-image: url("../../assets/pillar.png");
-
 }
 
-.elevatorPage .elevatorBox {
+.elevatorPageA .elevatorBox {
     width: 100px;
     height: 35px;
     background: #cccccc;
     position: absolute;
     bottom: 0;
     left: 100px;
-    animation: elevatorBoxMove 15s linear infinite;
+    animation: elevatorBoxMoveA 12s linear infinite;
     background: url("../../assets/elevator.png");
     background-repeat: no-repeat;
     background-size: 100px 35px;
 }
 
-.elevatorPage .person {
+.elevatorPageA .person {
     width: 20px;
     height: 20px;
     border: solid 1px;
@@ -37,12 +32,12 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    animation: personOut 15s linear infinite;
+    animation: personOutA 12s linear infinite;
     opacity: 1;
 
 }
 
-.elevatorPage .waitPerson {
+.elevatorPageA .waitPerson {
     width: 20px;
     height: 20px;
     border: solid 1px;
@@ -50,10 +45,10 @@
     position: absolute;
     bottom: -30px;
     left: 140px;
-    animation: waitPerson 15s linear infinite;
+    animation: waitPersonA 12s linear infinite;
 }
 
-@keyframes waitPerson {
+@keyframes waitPersonA {
     0% {
         bottom: -30px;
         opacity: 0;
@@ -83,7 +78,7 @@
 }
 
 
-@keyframes personOut {
+@keyframes personOutA {
     0% {
         left: 0;
         opacity: 0;
@@ -94,69 +89,69 @@
     }
 
 
-
-    26% {
+    34% {
+        opacity: 0;
         left: 0;
-        opacity: 0;
     }
-    28% {
-        opacity: 0;
+    36% {
+        opacity: 1;
+        left: 0;
     }
-    30% {
+    44% {
+        left: -45px;
         opacity: 1;
     }
-    38% {
-        opacity: 1;
-    }
-    40% {
+    46% {
         left: -50px;
         opacity: 0;
     }
 
 
 
-    46% {
+    58% {
         left: 0;
         opacity: 0
-    }
-    48% {
-        opacity: 0
-    }
-    50% {
-        opacity: 1;
-    }
-    58% {
-        opacity: 1
     }
     60% {
-        left: -50px;
-        opacity: 0;
-    }
-
-
-    66% {
         left: 0;
         opacity: 0;
+    }
+    62% {
+        left: 0;
+        opacity: 1;
     }
     68% {
-        opacity: 0;
+        left: -45px;
+        opacity: 1;
     }
     70% {
-        opacity: 1;
-    }
-    78% {
-        opacity: 1;
-    }
-    80% {
         left: -50px;
         opacity: 0;
     }
 
 
-    86% {
+    78% {
         left: 0;
         opacity: 0;
     }
+    80% {
+        left: 0;
+        opacity: 0;
+    }
+    82% {
+        left: 0;
+        opacity: 1;
+    }
+    90% {
+        left: -45px;
+        opacity: 1;
+    }
+    92% {
+        left: -50px;
+        opacity: 0;
+    }
+
+
     100% {
         left: 0;
         opacity: 0;
@@ -164,42 +159,39 @@
 }
 
 
-@keyframes elevatorBoxMove {
+@keyframes elevatorBoxMoveA {
     0% {
         bottom: 0;
     }
-    20% {
+    25% {
         bottom: 0;
     }
 
 
-
-    26% {
-        bottom:70px;
+    32% {
+        bottom: 140px;
     }
-    40% {
-        bottom:70px;
-    }
-
-
-
     46% {
         bottom: 140px;
     }
-    60% {
-        bottom: 140px;
+
+
+    58% {
+        bottom: 280px;
+    }
+    72% {
+        bottom: 280px;
     }
 
 
-    66% {
+    78% {
         bottom: 210px;
     }
-    80% {
+    92% {
         bottom: 210px;
     }
 
-    100% {
-        bottom: 0;
-    }
+
+
 }
 

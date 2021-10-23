@@ -1,5 +1,8 @@
 import React from 'react'
 import Elevator from '../elevator/Elevator'
+import ElevatorA from '../elevator/ElevatorA'
+import ElevatorB from '../elevator/ElevatorB'
+import teamLogo from '../../assets/teamLogo.png'
 import './home.css'
 
 const Home = function () {
@@ -13,13 +16,13 @@ const Home = function () {
 //--- operate ----------------------
 
     return (<div className='homePage'>
-        <div>
-            风和颂
+        <div className={'homeTitle'}>
+            <img src={teamLogo} className={'teamLogo'} alt=""/>
         </div>
         <div className={'elevatorWrap'}>
             <Elevator/>
-            <Elevator/>
-            <Elevator/>
+            <ElevatorA/>
+            <ElevatorB/>
         </div>
     </div>)
 }

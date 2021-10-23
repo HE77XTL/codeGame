@@ -1,10 +1,9 @@
 import React from 'react'
-import './elevator.css'
-
 import person from '../../assets/person.png'
 import personMove from '../../assets/personMove.gif'
+import './elevatorA.css'
 
-const Elevator = function () {
+const ElevatorA = function () {
 
 //--- useState ----------------------
 
@@ -14,7 +13,7 @@ const Elevator = function () {
 
 //--- operate ----------------------
 
-    return (<div className={'elevatorPage'}>
+    return (<div className={'elevatorPageA'}>
         <div className={'pillar'}>
 
         </div>
@@ -29,4 +28,4 @@ const Elevator = function () {
     </div>)
 }
 
-export default Elevator
+export default ElevatorA

@@ -1,35 +1,30 @@
-.personImg {
-    width: 20px;
-}
-
-.elevatorPage {
+.elevatorPageB {
     position: relative;
     width: 300px;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
 }
-.elevatorPage .pillar {
+.elevatorPageB .pillar {
     width: 30px;
     height: 340px;
     background-image: url("../../assets/pillar.png");
-
 }
 
-.elevatorPage .elevatorBox {
+.elevatorPageB .elevatorBox {
     width: 100px;
     height: 35px;
     background: #cccccc;
     position: absolute;
     bottom: 0;
     left: 100px;
-    animation: elevatorBoxMove 15s linear infinite;
+    animation: elevatorBoxMoveB 20s linear infinite;
     background: url("../../assets/elevator.png");
     background-repeat: no-repeat;
     background-size: 100px 35px;
 }
 
-.elevatorPage .person {
+.elevatorPageB .person {
     width: 20px;
     height: 20px;
     border: solid 1px;
@@ -37,12 +32,12 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    animation: personOut 15s linear infinite;
+    animation: personOutB 20s linear infinite;
     opacity: 1;
 
 }
 
-.elevatorPage .waitPerson {
+.elevatorPageB .waitPerson {
     width: 20px;
     height: 20px;
     border: solid 1px;
@@ -50,10 +45,10 @@
     position: absolute;
     bottom: -30px;
     left: 140px;
-    animation: waitPerson 15s linear infinite;
+    animation: waitPersonB 20s linear infinite;
 }
 
-@keyframes waitPerson {
+@keyframes waitPersonB {
     0% {
         bottom: -30px;
         opacity: 0;
@@ -83,7 +78,7 @@
 }
 
 
-@keyframes personOut {
+@keyframes personOutB {
     0% {
         left: 0;
         opacity: 0;
@@ -95,109 +90,156 @@
 
 
 
-    26% {
+    21.5% {
         left: 0;
-        opacity: 0;
+        opacity: 1;
     }
-    28% {
-        opacity: 0;
+    29% {
+        left: -45px;
+        opacity: 1;
     }
     30% {
-        opacity: 1;
-    }
-    38% {
-        opacity: 1;
-    }
-    40% {
         left: -50px;
         opacity: 0;
     }
 
 
 
-    46% {
+    35% {
         left: 0;
         opacity: 0
     }
-    48% {
-        opacity: 0
+    36.5% {
+        left: 0;
+        opacity: 1
     }
-    50% {
+    44% {
+        left: -45px;
         opacity: 1;
     }
-    58% {
-        opacity: 1
+    45% {
+        left: -50px;
+        opacity: 0
+    }
+
+
+    50% {
+        left: 0;
+        opacity: 0;
+    }
+    51.5% {
+        left: 0;
+        opacity: 1;
+    }
+    59% {
+        left: -45px;
+        opacity: 1;
     }
     60% {
         left: -50px;
-        opacity: 0;
+        opacity: 0
     }
 
 
-    66% {
+    65% {
         left: 0;
         opacity: 0;
     }
-    68% {
-        opacity: 0;
-    }
-    70% {
+    66.5% {
+        left: 0;
         opacity: 1;
     }
-    78% {
+    74% {
+        left: -45px;
         opacity: 1;
     }
-    80% {
+    75% {
         left: -50px;
-        opacity: 0;
+        opacity: 0
     }
 
-
-    86% {
+    80% {
         left: 0;
         opacity: 0;
+    }
+    81.5% {
+        left: 0;
+        opacity: 1;
+    }
+    89% {
+        left: -45px;
+        opacity: 1;
+    }
+    90% {
+        left: -50px;
+        opacity: 0
     }
     100% {
         left: 0;
         opacity: 0;
     }
+
 }
 
 
-@keyframes elevatorBoxMove {
+@keyframes elevatorBoxMoveB {
     0% {
         bottom: 0;
     }
-    20% {
+    15% {
         bottom: 0;
     }
 
 
 
-    26% {
+    20% {
         bottom:70px;
     }
-    40% {
+    30% {
         bottom:70px;
     }
 
 
 
-    46% {
+    35% {
         bottom: 140px;
+    }
+    45% {
+        bottom: 140px;
+    }
+
+
+    50% {
+        bottom: 280px;
     }
     60% {
+        bottom: 280px;
+    }
+
+    65% {
+        bottom: 140px;
+    }
+    75% {
         bottom: 140px;
     }
 
-
-    66% {
-        bottom: 210px;
-    }
     80% {
-        bottom: 210px;
+        bottom: 70px;
+    }
+    90% {
+        bottom: 70px;
     }
 
+    95% {
+        bottom: 0;
+    }
+    100% {
+        bottom: 0;
+    }
+
+    95% {
+        bottom: 0;
+    }
     100% {
         bottom: 0;
     }

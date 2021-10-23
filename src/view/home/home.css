@@ -3,6 +3,17 @@
     height: 500px;
     box-sizing: border-box;
     border: 1px solid #ddd;
+    background-image: url("../../assets/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.homeTitle {
+    height: 77px;
+    font-size: 20px;
+    color: white;
+}
+.teamLogo {
+    width: 100px;
 }
 .elevatorWrap {
     display: flex;

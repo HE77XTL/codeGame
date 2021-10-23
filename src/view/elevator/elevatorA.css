@@ -1,6 +1,6 @@
 .elevatorPageA {
     position: relative;
-    width: 300px;
+    width: 290px;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -17,7 +17,7 @@
     background: #cccccc;
     position: absolute;
     bottom: 0;
-    left: 100px;
+    left: 95px;
     animation: elevatorBoxMoveA 12s linear infinite;
     background: url("../../assets/elevator.png");
     background-repeat: no-repeat;
@@ -28,10 +28,10 @@
     width: 20px;
     height: 20px;
     border: solid 1px;
-    background: #7ec1ff;
+    background: #ffc468;
     position: absolute;
     bottom: 0;
-    left: 0;
+    right: 40px;
     animation: personOutA 12s linear infinite;
     opacity: 1;
 
@@ -40,11 +40,9 @@
 .elevatorPageA .waitPerson {
     width: 20px;
     height: 20px;
-    border: solid 1px;
-    background: #81ff32;
     position: absolute;
     bottom: -30px;
-    left: 140px;
+    left: 135px;
     animation: waitPersonA 12s linear infinite;
 }
 
@@ -53,20 +51,20 @@
         bottom: -30px;
         opacity: 0;
     }
-    2% {
+    2.5% {
         bottom: -30px;
         opacity: 1;
     }
-    10% {
+    12.5% {
         bottom: -30px;
         opacity: 1;
     }
 
-    18% {
+    22.5% {
         bottom: 10px;
         opacity: 1;
     }
-    20% {
+    25% {
         bottom: 10px;
         opacity: 0;
     }
@@ -80,80 +78,92 @@
 
 @keyframes personOutA {
     0% {
-        left: 0;
+        right: 40px;
         opacity: 0;
     }
     20% {
-        left: 0;
+        right: 40px;
         opacity: 0;
     }
 
 
     34% {
+        right: 40px;
+        bottom: 0;
         opacity: 0;
-        left: 0;
     }
-    36% {
+    38% {
+        right: 40px;
+        bottom: 35px;
         opacity: 1;
-        left: 0;
     }
     44% {
-        left: -45px;
+        right: -45px;
+        bottom: 35px;
         opacity: 1;
     }
     46% {
-        left: -50px;
+        right: -50px;
+        bottom: 35px;
         opacity: 0;
     }
-
 
 
     58% {
-        left: 0;
+        right: 40px;
+        bottom: 0;
         opacity: 0
     }
     60% {
-        left: 0;
+        right: 40px;
+        bottom: 0;
         opacity: 0;
     }
     62% {
-        left: 0;
+        right: 40px;
+        bottom: 35px;
         opacity: 1;
     }
     68% {
-        left: -45px;
+        right: -45px;
+        bottom: 35px;
         opacity: 1;
     }
     70% {
-        left: -50px;
+        right: -50px;
+        bottom: 35px;
         opacity: 0;
     }
 
 
     78% {
-        left: 0;
+        right: 40px;
+        bottom: 0;
         opacity: 0;
     }
     80% {
-        left: 0;
+        right: 40px;
         opacity: 0;
     }
     82% {
-        left: 0;
+        right: 40px;
+        bottom: 35px;
         opacity: 1;
     }
     90% {
-        left: -45px;
+        right: -45px;
+        bottom: 35px;
         opacity: 1;
     }
     92% {
-        left: -50px;
+        right: -50px;
+        bottom: 35px;
         opacity: 0;
     }
 
 
     100% {
-        left: 0;
+        right: 0;
         opacity: 0;
     }
 }
@@ -168,30 +178,27 @@
     }
 
 
-    32% {
-        bottom: 140px;
+    34% {
+        bottom: 160px;
     }
     46% {
-        bottom: 140px;
+        bottom: 160px;
     }
 
 
     58% {
-        bottom: 280px;
+        bottom: 320px;
     }
     72% {
-        bottom: 280px;
+        bottom: 320px;
     }
 
 
     78% {
-        bottom: 210px;
+        bottom: 240px;
     }
     92% {
-        bottom: 210px;
+        bottom: 240px;
     }
-
-
-
 }
 

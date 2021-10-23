@@ -4,7 +4,7 @@
 
 .elevatorPage {
     position: relative;
-    width: 300px;
+    width: 290px;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -22,7 +22,7 @@
     background: #cccccc;
     position: absolute;
     bottom: 0;
-    left: 100px;
+    left: 95px;
     animation: elevatorBoxMove 15s linear infinite;
     background: url("../../assets/elevator.png");
     background-repeat: no-repeat;
@@ -33,10 +33,10 @@
     width: 20px;
     height: 20px;
     border: solid 1px;
-    background: #7ec1ff;
+    background: #ffc468;
     position: absolute;
     bottom: 0;
-    left: 0;
+    right: 40px;
     animation: personOut 15s linear infinite;
     opacity: 1;
 
@@ -45,11 +45,9 @@
 .elevatorPage .waitPerson {
     width: 20px;
     height: 20px;
-    border: solid 1px;
-    background: #81ff32;
     position: absolute;
     bottom: -30px;
-    left: 140px;
+    left: 135px;
     animation: waitPerson 15s linear infinite;
 }
 
@@ -85,80 +83,102 @@
 
 @keyframes personOut {
     0% {
-        left: 0;
+        right: 40px;
         opacity: 0;
     }
     20% {
-        left: 0;
+        right: 40px;
         opacity: 0;
     }
 
 
 
     26% {
-        left: 0;
+        right: 40px;
+        bottom: 0;
         opacity: 0;
     }
     28% {
+        right: 40px;
         opacity: 0;
     }
     30% {
+        right: 40px;
+        bottom: 35px;
         opacity: 1;
     }
     38% {
+        right: -45px;
+        bottom: 35px;
         opacity: 1;
     }
     40% {
-        left: -50px;
+        right: -50px;
+        bottom: 35px;
         opacity: 0;
     }
 
 
 
     46% {
-        left: 0;
+        right: 40px;
+        bottom: 0;
         opacity: 0
     }
     48% {
+        right: 40px;
         opacity: 0
     }
     50% {
+        right: 40px;
+        bottom: 35px;
         opacity: 1;
     }
     58% {
+        right: -45px;
+        bottom: 35px;
         opacity: 1
     }
     60% {
-        left: -50px;
+        right: -50px;
+        bottom: 35px;
         opacity: 0;
     }
 
 
     66% {
-        left: 0;
+        right: 40px;
+        bottom: 0;
         opacity: 0;
     }
     68% {
         opacity: 0;
     }
     70% {
+        right: 40px;
+        bottom: 35px;
         opacity: 1;
     }
     78% {
+        right: -45px;
+        bottom: 35px;
         opacity: 1;
     }
     80% {
-        left: -50px;
+        right: -50px;
+        bottom: 35px;
         opacity: 0;
     }
 
 
     86% {
-        left: 0;
+        right: 40px;
+        bottom: 0;
         opacity: 0;
     }
     100% {
-        left: 0;
+        right: 40px;
+        bottom: 0;
         opacity: 0;
     }
 }
@@ -175,29 +195,32 @@
 
 
     26% {
-        bottom:70px;
+        bottom:80px;
     }
     40% {
-        bottom:70px;
+        bottom:80px;
     }
 
 
 
     46% {
-        bottom: 140px;
+        bottom: 160px;
     }
     60% {
-        bottom: 140px;
+        bottom: 160px;
     }
 
 
     66% {
-        bottom: 210px;
+        bottom: 240px;
     }
     80% {
-        bottom: 210px;
+        bottom: 240px;
     }
 
+    95% {
+        bottom: 0;
+    }
     100% {
         bottom: 0;
     }

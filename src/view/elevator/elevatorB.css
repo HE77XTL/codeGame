@@ -1,6 +1,6 @@
 .elevatorPageB {
     position: relative;
-    width: 300px;
+    width: 290px;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -17,7 +17,7 @@
     background: #cccccc;
     position: absolute;
     bottom: 0;
-    left: 100px;
+    left: 95px;
     animation: elevatorBoxMoveB 20s linear infinite;
     background: url("../../assets/elevator.png");
     background-repeat: no-repeat;
@@ -28,10 +28,10 @@
     width: 20px;
     height: 20px;
     border: solid 1px;
-    background: #7ec1ff;
+    background: #ffc468;
     position: absolute;
     bottom: 0;
-    left: 0;
+    right: 40px;
     animation: personOutB 20s linear infinite;
     opacity: 1;
 
@@ -40,11 +40,9 @@
 .elevatorPageB .waitPerson {
     width: 20px;
     height: 20px;
-    border: solid 1px;
-    background: #81ff32;
     position: absolute;
     bottom: -30px;
-    left: 140px;
+    left: 135px;
     animation: waitPersonB 20s linear infinite;
 }
 
@@ -53,20 +51,20 @@
         bottom: -30px;
         opacity: 0;
     }
-    2% {
+    1.5% {
         bottom: -30px;
         opacity: 1;
     }
-    10% {
+    7.5% {
         bottom: -30px;
         opacity: 1;
     }
 
-    18% {
+    13.5% {
         bottom: 10px;
         opacity: 1;
     }
-    20% {
+    15% {
         bottom: 10px;
         opacity: 0;
     }
@@ -80,102 +78,124 @@
 
 @keyframes personOutB {
     0% {
-        left: 0;
+        right: 40px;
+        bottom: 0;
         opacity: 0;
     }
     20% {
-        left: 0;
+        right: 40px;
+        bottom: 0;
         opacity: 0;
     }
 
 
 
     21.5% {
-        left: 0;
+        right: 40px;
+        bottom: 35px;
         opacity: 1;
     }
     29% {
-        left: -45px;
+        right: -45px;
+        bottom: 35px;
         opacity: 1;
     }
     30% {
-        left: -50px;
+        right: -50px;
+        bottom: 35px;
         opacity: 0;
     }
 
 
 
     35% {
-        left: 0;
+        right: 40px;
+        bottom: 0;
         opacity: 0
     }
     36.5% {
-        left: 0;
+        right: 40px;
+        bottom: 35px;
         opacity: 1
     }
     44% {
-        left: -45px;
+        right: -45px;
+        bottom: 35px;
         opacity: 1;
     }
     45% {
-        left: -50px;
+        right: -50px;
+        bottom: 35px;
         opacity: 0
     }
 
 
     50% {
-        left: 0;
+        right: 40px;
+        bottom: 0;
         opacity: 0;
     }
     51.5% {
-        left: 0;
+        right: 40px;
+        bottom: 35px;
         opacity: 1;
     }
     59% {
-        left: -45px;
+        right: -45px;
+        bottom: 35px;
         opacity: 1;
     }
     60% {
-        left: -50px;
+        right: -50px;
+        bottom: 35px;
         opacity: 0
     }
 
 
     65% {
-        left: 0;
+        right: 40px;
+        bottom: 0;
         opacity: 0;
     }
     66.5% {
-        left: 0;
+        right: 40px;
+        bottom: 35px;
         opacity: 1;
     }
     74% {
-        left: -45px;
+        right: -45px;
+        bottom: 35px;
         opacity: 1;
     }
     75% {
-        left: -50px;
+        right: -50px;
+        bottom: 35px;
         opacity: 0
     }
 
     80% {
-        left: 0;
+        right: 40px;
+        bottom: 0;
         opacity: 0;
     }
     81.5% {
-        left: 0;
+        right: 40px;
+        bottom: 35px;
         opacity: 1;
     }
     89% {
-        left: -45px;
+        right: -45px;
+        bottom: 35px;
         opacity: 1;
     }
     90% {
-        left: -50px;
+        right: -50px;
+        bottom: 35px;
         opacity: 0
     }
     100% {
-        left: 0;
+        right: 40px;
+        bottom: 0;
         opacity: 0;
     }
 
@@ -193,41 +213,41 @@
 
 
     20% {
-        bottom:70px;
+        bottom:80px;
     }
     30% {
-        bottom:70px;
+        bottom:80px;
     }
 
 
 
     35% {
-        bottom: 140px;
+        bottom: 160px;
     }
     45% {
-        bottom: 140px;
+        bottom: 160px;
     }
 
 
     50% {
-        bottom: 280px;
+        bottom: 320px;
     }
     60% {
-        bottom: 280px;
+        bottom: 320px;
     }
 
     65% {
-        bottom: 140px;
+        bottom: 160px;
     }
     75% {
-        bottom: 140px;
+        bottom: 160px;
     }
 
     80% {
-        bottom: 70px;
+        bottom: 80px;
     }
     90% {
-        bottom: 70px;
+        bottom: 80px;
     }
 
     95% {
